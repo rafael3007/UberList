@@ -6,14 +6,13 @@
 
 ####    A primeira onde é mostrado ao Usuário um menu com duas Opções( Botões ): Motoristas ou Veiculos.
 ####    A segunda é um feed onde será listado itens de acordo com a seleção do usuário.
-
-###     A terceira é uma tela com detalhes do item selecionado pelo Usuário.
+####     A terceira é uma tela com detalhes do item selecionado pelo Usuário.
 
 ## Como Executar o projeto:
 
 ### Para executar o projeto basta fazer o download dele pelo github podendo ser utilizado o comando >> git clone https://github.com/rafael3007/UberList.git
 
-#### em seguida entre na pastado projeto >> CD UberList
+### em seguida entre na pastado projeto >> CD UberList
 
 ### esse projeto foi utilizado o expo então é importante ter o Expo-CLI instalado na sua máquina, para isso execute o comando >> npm install --global expo-cli
 
