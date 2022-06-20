@@ -1,0 +1,66 @@
+{
+    "motoristas": [
+        {
+            "id": 1,
+            "nome": "Rafael Brito",
+            "CNH": 77771284859 ,
+            "categoria": "AB"
+        },
+        {
+            "id": 2,
+            "nome": "Felipe Barros",
+            "CNH": 7124797700 ,
+            "categoria": "AD"
+        },
+        {
+            "id": 3,
+            "nome": "Marcus F",
+            "CNH": 7771251527700 ,
+            "categoria": "B"
+        },
+        {
+            "id": 4,
+            "nome": "Márcia",
+            "CNH": 7772157700 ,
+            "categoria": "AB"
+        },
+        {
+            "id": 5,
+            "nome": "Joana",
+            "CNH": 2411247700 ,
+            "categoria": "AE"
+        },
+        {
+            "id": 6,
+            "nome": "Junior",
+            "CNH": 71274127700 ,
+            "categoria": "AC"
+        },
+        {
+            "id": 7,
+            "nome": "Juliana",
+            "CNH": 77128578125 ,
+            "categoria": "AB"
+        },
+        {
+            "id": 1,
+            "nome": "Daniel",
+            "CNH": 77772398635 ,
+            "categoria": "A"
+        },
+        {
+            "id": 1,
+            "nome": "Lucas",
+            "CNH": 7214871200 ,
+            "categoria": "AD"
+        },
+        {
+            "id": 1,
+            "nome": "Roberta",
+            "CNH": 77771248910 ,
+            "categoria": "AE"
+        }
+
+
+    ]
+}

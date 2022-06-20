@@ -1,0 +1,60 @@
+version: '3'
+
+
+services:
+  adminer:
+    image: 'adminer:4'
+    container_name: adminer_container
+    restart: always
+    ports:
+      - '8080:8080'
+    networks:
+      ubernet:
+        ipv4_address: 172.29.0.2
+
+  motoristas:
+    image: uberlist
+    build: ./dockerfiles/servicos/
+    hostname: motoristas
+    ports:
+      - '3000:3000'
+    volumes:
+      - './motoristas:/servico'
+    command: python3 motoristas.py
+    networks:
+      ubernet:
+        ipv4_address: 172.29.0.3
+
+  veiculos:
+    image: uberlist
+    build: ./dockerfiles/servicos/
+    hostname: veiculos
+    ports:
+      - '5000:5000'
+    volumes:
+      - './veiculos:/servico'
+    command: python3 veiculos.py
+    networks:
+      ubernet:
+        ipv4_address: 172.29.0.4
+
+  bduber:
+    image: mysql
+    container_name: bancodados_container
+    restart: always
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: sys
+    networks:
+      ubernet:
+        ipv4_address: 172.29.0.5
+
+networks:
+  ubernet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.29.0.1/16

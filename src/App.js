@@ -1,19 +1,19 @@
+
 import * as React from 'react';
+import { View, Text } from 'react-native';
 import { NavigationContainer, } from '@react-navigation/native';
 import { createNativeStackNavigator  } from '@react-navigation/native-stack';
 
 //pages
-import Home from "./src/screens/Home/Home.js";
-import Veiculos from './src/screens/Veiculos/';
-import Motoristas from './src/screens/Motoristas/';
-import Motorista from './src/screens/Motoristas/Motorista/';
-import Veiculo from './src/screens/Veiculos/Veiculo/';
+import Home from './screens/Home/Home';
+import Veiculos from './screens/Veiculos/';
+import Motoristas from './screens/Motoristas/';
+import Motorista from './screens/Motoristas/Motorista/';
+import Veiculo from './screens/Veiculos/Veiculo/';
 
 const Stack = createNativeStackNavigator();
 
-
-
-export default function App() {
+function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -27,4 +27,4 @@ export default function App() {
   );
 }
 
-
+export default App;
