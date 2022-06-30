@@ -45,18 +45,18 @@ def get_motorista(id):
 
     return jsonify(resultado)
 
-
-if __name__ == "__main__":
-    servico.run(
-        host="0.0.0.0",
-        debug=DEBUG
+@servico.route("/test")
+def get_test(id):
+    conexao = get_conexao_bd()
+    cursor = conexao.cursor(dictionary=True)
+    cursor.execute(
+        "select * from motoristas where id = "+ str(id)+" "
     )
+    
+    resultado = cursor.fetchall()
 
-if __name__ == "__main__":
-    servico.run(
-        host="0.0.0.0",
-        debug=DEBUG
-    )
+    return jsonify(resultado)
+
 
 if __name__ == "__main__":
     servico.run(
